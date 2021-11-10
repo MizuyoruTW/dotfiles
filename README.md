@@ -1,6 +1,7 @@
 # dotfiles
 ## Environment
 * Shell: zsh
+* Zsh Theme: powerlevel10k
 * DE: Xfce
 * WM: bspwm 
 * Terminal: urxvt
