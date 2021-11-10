@@ -1,0 +1,51 @@
+Xft.dpi: 141
+
+! URxvt | fonts
+URxvt.font: xft:Dejavu Sans Mono:style=Book:size=11:antialias=true, xft:Noto Sans CJK TC:style=Regular:size=11:antialias=true
+URxvt.boldfont: xft:Dejavu Sans Mono:style=Bold:size=11:antialias=true
+URxvt.italicFont: xft:Dejavu Sans Mono:style=Oblique:size=11:antialias=true
+URxvt.boldItalicFont: xft:Dejavu Sans Mono:style=Bold Oblique:size=11:antialias=true
+
+!! URxvt | appearance
+URxvt*termName: rxvt-unicode
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+URxvt.geometry: 92x24
+URxvt.internalBorder: 24
+URxvt.cursorBlink: true
+URxvt.cursorUnderLine: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.iso14755: false
+!
+! transparency
+URxvt.scrollbar: False
+URxvt.foreground: white
+URxvt.background: rgba:3333/3333/3333/cccc
+URxvt.depth: 32
+
+!! URxvt | extensions and stuff
+URxvt.perl-ext-common: default,matcher,resize-font
+!
+! clickable urls
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.rend.0: Uline Bold fg4
+URxvt.matcher.button: 1
+!
+! copy paste
+URxvt.clipboard.autocopy: true
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+URxvt.keysym.Control-Shift-V: eval:paste_clipboard
+URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
+!
+! resize font
+URxvt.keysym.C-KP_Add:  resize-font:bigger
+URxvt.keysym.C-KP_Subtract:    resize-font:smaller
+URxvt.keysym.C-KP_Divide:    resize-font:reset
+
+
+rofi.theme: full
+rofi.font: Noto Sans CJK TC 12
