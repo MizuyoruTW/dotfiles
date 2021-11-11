@@ -12,6 +12,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a firefox:Toolkit sticky=on state=floating
+bspc rule -a firefox:Devtools state=floating
 
 # show cursor when startup
 xsetroot -cursor_name left_ptr
