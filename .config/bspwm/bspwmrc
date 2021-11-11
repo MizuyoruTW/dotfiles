@@ -11,16 +11,13 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
+bspc rule -a firefox:Toolkit sticky=on state=floating
 
 # show cursor when startup
 xsetroot -cursor_name left_ptr
-
-#xfce4-panel -d &
+# polybar
 /home/mizuyoru/.config/polybar/launch.sh &
+# xfce desktop
 xfdesktop -D &
+# lock screen after suspend
 xss-lock -- /home/mizuyoru/Project/bash/lock.sh &
