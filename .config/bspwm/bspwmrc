@@ -16,9 +16,18 @@ bspc rule -a firefox:Devtools state=floating
 
 # show cursor when startup
 xsetroot -cursor_name left_ptr
+
 # polybar
 /home/mizuyoru/.config/polybar/launch.sh &
+
+# compositor
+picom &
+
 # xfce desktop
-xfdesktop -D &
+#xfdesktop -D &
+
 # lock screen after suspend
 xss-lock -- /home/mizuyoru/Project/bash/lock.sh &
+
+# random wallpaper per 30 mins
+/home/mizuyoru/Project/bash/random_wallpaper.sh &
