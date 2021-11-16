@@ -23,11 +23,26 @@ xsetroot -cursor_name left_ptr
 # compositor
 picom &
 
-# xfce desktop
-#xfdesktop -D &
-
 # lock screen after suspend
 xss-lock -- /home/mizuyoru/Project/bash/lock.sh &
 
 # random wallpaper per 30 mins
 /home/mizuyoru/Project/bash/random_wallpaper.sh &
+
+# Bluetooth Manager
+blueman-applet &
+
+#Clipboard manager
+xfce4-clipman &
+
+#Fcitx
+XDG_CURRENT_DESKTOP=GNOME fcitx5 &
+
+#Network-Manager
+nm-applet --indicator &
+
+#Xfce Notification
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+
+#KDE-connect
+/usr/lib/kdeconnectd &
