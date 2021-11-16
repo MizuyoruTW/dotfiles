@@ -134,3 +134,9 @@ XF86AudioMute
 
 super + l
     /home/mizuyoru/Project/bash/lock.sh
+
+super + v
+    xfce4-popup-clipman
+
+{_,shift,alt} Print
+    xfce4-screenshooter {-f,-r,-w}
