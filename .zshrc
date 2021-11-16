@@ -70,6 +70,9 @@ zinit snippet OMZ::lib/completion.zsh
 zinit snippet OMZ::lib/history.zsh
 zinit snippet OMZ::lib/key-bindings.zsh
 
+# enviroment variables
+export QT_QPA_PLATFORMTHEME="qt5ct"
 export GTK_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=fcitx
+
