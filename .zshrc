@@ -76,3 +76,7 @@ export GTK_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=fcitx
 
+# add this to prevent git auto-completion being slow
+__git_files () {
+    _wanted files expl 'local files' _files
+}
