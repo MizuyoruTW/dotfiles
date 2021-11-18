@@ -2,7 +2,7 @@
 ## Environment
 * Shell: zsh
 * Zsh Theme: powerlevel10k
-* DE: Xfce
+* Zsh Plugin Manager: zinit
 * WM: bspwm 
 * Terminal: urxvt
 * Compositor: picom
