@@ -13,6 +13,8 @@ bspc config gapless_monocle      true
 
 bspc rule -a firefox:Toolkit sticky=on state=floating
 bspc rule -a firefox:Devtools state=floating
+# for JAVA application
+wmname LG3D
 
 # show cursor when startup
 xsetroot -cursor_name left_ptr
