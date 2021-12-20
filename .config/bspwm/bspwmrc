@@ -13,6 +13,10 @@ bspc config gapless_monocle      true
 
 bspc rule -a firefox:Toolkit sticky=on state=floating
 bspc rule -a firefox:Devtools state=floating
+
+# turn on numlock
+numlockx &
+
 # for JAVA application
 wmname LG3D
 
