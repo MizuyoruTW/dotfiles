@@ -2,7 +2,7 @@
 
 task=$(rofi -sep "|" -dmenu<<< "Power off|Restart|Suspend|Cancel")
 choice="Cancel"
-if [ "$task" != "Cancel" ]; then
+if [ "$task" = "Power off" -o "$task" = "Restart" -o "$task" = "Suspend" ]; then
     choice=$(rofi -dmenu -sep "|" <<< "$task|Cancel")
 fi
 
