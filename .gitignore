@@ -9,3 +9,5 @@
 !.config/
 # there are lots of gitignore in the subfolders
 **/.gitignore
+# idk why this is not blocked
+go/
