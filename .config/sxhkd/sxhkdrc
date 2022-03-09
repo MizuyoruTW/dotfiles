@@ -130,7 +130,7 @@ XF86Audio{LowerVolume,RaiseVolume}
     pactl set-sink-volume 0 {-5%,+5%}
 
 XF86AudioMute
-    amixer -q sset Master toggle
+    pactl set-sink-mute 0 toggle
 
 super + l
     /home/mizuyoru/Project/bash/lock.sh
@@ -140,3 +140,6 @@ super + v
 
 {_,shift,alt} Print
     xfce4-screenshooter {-f,-r,-w}
+
+super + ctrl + s
+    /home/mizuyoru/Project/bash/power.sh
