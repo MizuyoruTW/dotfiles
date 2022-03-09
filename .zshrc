@@ -7,21 +7,6 @@ fi
 
 CASE_SENSITIVE="true"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/mizuyoru/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/mizuyoru/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/mizuyoru/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/mizuyoru/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
@@ -56,6 +41,7 @@ alias wine32="WINEPREFIX='/home/mizuyoru/.wine32' WINEARCH=win32 wine"
 alias yay="yay --aur"
 alias sus="sudo pm-suspend"
 alias honeygain="/home/mizuyoru/Project/bash/honeygain.sh"
+alias pawns="/home/mizuyoru/Project/bash/pawns.sh"
 alias tw="LC_ALL=zh_TW.UTF-8"
 alias cn="LC_ALL=zh_CH.UTF-8"
 alias jp="LC_ALL=ja_JP.UTF-8"
@@ -64,6 +50,8 @@ alias cp="cp -vi"
 alias battery="cat /sys/class/power_supply/BAT0/capacity"
 alias mount_private="/home/mizuyoru/Project/bash/mount_private.sh"
 alias umount_private="sudo umount ~/Private"
+alias mount_samba="/home/mizuyoru/Project/bash/mount_samba.sh"
+alias 7z="7zz"
 zinit wait lucid atload"zicompinit; zicdreplay" blockf for \
     zsh-users/zsh-completions
 zinit snippet OMZ::lib/completion.zsh
