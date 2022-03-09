@@ -1,3 +1,11 @@
+# first, block everything
 *
+# second, unblock folders cuz if u block folder,
+# it won't even check things in the folder
+!*/
+# ignore myself
 !.gitignore
-!.config
+# this is the dotfile
+!.config/
+# there are lots of gitignore in the subfolders
+**/.gitignore
