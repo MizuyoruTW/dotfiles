@@ -78,8 +78,8 @@ super + bracket{left,right}
 
 
 # focus or send to the given desktop
-super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+super + {_,shift + }{1-5}
+	bspc {desktop -f,node -d} '^{1-5}'
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -139,7 +139,7 @@ super + v
     xfce4-popup-clipman
 
 {_,shift,alt} Print
-    xfce4-screenshooter {-f,-r,-w}
+    scrot '/tmp/%F_%T_$wx$h.png' { ,-s -f,-u} -e 'xclip -selection clipboard -t image/png -i $f;' && notify-send "Captured"
 
 super + ctrl + s
     /home/mizuyoru/Project/bash/power.sh
