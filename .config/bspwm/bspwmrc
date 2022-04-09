@@ -2,7 +2,8 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor eDP-1 -d I II III IV V
+bspc monitor HDMI-2 -d 1 2 3 4 5
 
 bspc config border_width         2
 bspc config window_gap          12
@@ -12,6 +13,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a "*:*:Picture in picture" state=floating
+bspc rule -a "Brave:*:Save File" state=floating
 
 # turn on numlock
 numlockx &
@@ -23,7 +25,8 @@ wmname LG3D
 xsetroot -cursor_name left_ptr
 
 # polybar
-/home/mizuyoru/.config/polybar/launch.sh &
+/home/mizuyoru/.config/polybar/launch.sh --forest &
+while sleep 60; do xdo raise -a "Polybar tray window"; done &
 
 # compositor
 picom &
@@ -54,4 +57,10 @@ dunst &
 kdeconnect-indicator &
 
 #earthquake alarm
-"/opt/OXWU/Program/地牛Wake Up!" --hidden
+"/opt/OXWU/Program/地牛Wake Up!" --hidden &
+
+#libinput-gestures
+libinput-gestures-setup start &
+
+#empty trash older then 7 days
+yes|trash-empty 7 &
