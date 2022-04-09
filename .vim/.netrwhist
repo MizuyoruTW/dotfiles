@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/mizuyoru/.local/share/icons'
+let g:netrw_dirhist_6='/home/mizuyoru'
 let g:netrw_dirhist_5='/home/mizuyoru/.config/mpv/lua-settings/mpv_thumbnail_script.conf'
 let g:netrw_dirhist_4='/home/mizuyoru/Project/mizualert'
 let g:netrw_dirhist_3='/home/mizuyoru/.config/ibus/rime'
