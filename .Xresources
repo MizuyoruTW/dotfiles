@@ -1,4 +1,5 @@
 Xft.dpi: 141
+Xcursor.size: 48 
 
 !! Colorscheme
 
@@ -85,6 +86,10 @@ URxvt.keysym.C-KP_Add:  resize-font:bigger
 URxvt.keysym.C-KP_Subtract:    resize-font:smaller
 URxvt.keysym.C-KP_Divide:    resize-font:reset
 
+URxvt.keysym.Home: \033[7~
+URxvt.keysym.End: \033[8~
+URxvt.keysym.KP_Home: \033[7~
+URxvt.keysym.KP_End:  \033[8~
 
 rofi.theme: full
 rofi.font: Noto Sans CJK TC 12
