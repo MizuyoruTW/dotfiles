@@ -52,6 +52,8 @@ alias mount_private="/home/mizuyoru/Project/bash/mount_private.sh"
 alias umount_private="sudo umount ~/Private"
 alias mount_samba="/home/mizuyoru/Project/bash/mount_samba.sh"
 alias 7z="7zz"
+alias rm='echo "This is not the command you are looking for. Or use \\\\rm"; false'
+alias tp='trash-put'
 zinit wait lucid atload"zicompinit; zicdreplay" blockf for \
     zsh-users/zsh-completions
 zinit snippet OMZ::lib/completion.zsh
@@ -68,3 +70,4 @@ export QT_IM_MODULE=fcitx
 __git_files () {
     _wanted files expl 'local files' _files
 }
+### End of Zinit's installer chunk
